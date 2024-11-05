@@ -1,0 +1,136 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/background.png');
+    background-repeat: repeat;
+    background-size: auto; /* o 'contain' o 'cover' según necesites */
+}
+
+nav {
+    background-color: #333;
+    display: flex; /* Usa flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacia la imagen y el menú */
+    padding: 10px; /* Agrega un poco de padding */
+}
+
+.logo {
+    height: 50px; /* Ajusta la altura de la imagen según necesites */
+    margin-left: 20px; /* Espaciado a la izquierda */
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: center; /* Centra las opciones del menú */
+    flex-grow: 1; /* Permite que la navbar ocupe el espacio restante */
+}
+
+.optionNavBar{
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Content */
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+p{
+    color: bisque;
+}
+
+footer {
+    background-color: #333; /* Color oscuro que combina con la navBar */
+    color: #ccc;            /* Color claro para el texto */
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    border-top: 1px solid #444; /* Línea sutil para separar el footer */
+}
+
+footer a {
+    color: #ccc;            /* Color de los enlaces en el footer */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: bisque;            /* Color de enlace al pasar el cursor */
+}
+
+
+.descFactions {
+    max-width: 800px;    /* Limita el ancho del texto */
+    margin-left: 20px;   /* Desplaza el contenido hacia la derecha */
+    padding: 20px 0;     /* Espacio arriba y abajo */
+    text-align: left;    /* Alinea el texto a la izquierda */
+}
+
+.titulo {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el título y la imagen */
+    gap: 10px;           /* Espacio entre el título y la imagen */
+}
+
+.boton-bisque {
+    background-color: bisque;          /* Color de fondo bisque */
+    color: #333;                       /* Color del texto */
+    border: 2px solid #d2a679;         /* Borde de un tono más oscuro */
+    border-radius: 8px;                /* Bordes redondeados */
+    padding: 10px 20px;                /* Espacio interno */
+    font-size: 1rem;                   /* Tamaño de fuente */
+    font-weight: bold;                 /* Texto en negrita */
+    cursor: pointer;                   /* Cambia el cursor a pointer */
+    transition: all 0.3s ease;         /* Suaviza las transiciones */
+    margin-left: 20px;
+}
+
+.boton-bisque:hover {
+    background-color: #e3b48b;         /* Color de fondo al pasar el cursor */
+    color: white;                      /* Cambia el color del texto a blanco */
+    border-color: #b8865d;             /* Cambia el color del borde */
+    transform: scale(1.05);            /* Hace el botón un poco más grande */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+}
+
+.boton-bisque:active {
+    transform: scale(0.98);            /* Efecto de presionado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+}
+
+#resultadoFaction {
+    background-color: bisque;
+    border: 2px solid #b5651d; /* Un tono marrón para el borde */
+    border-radius: 8px;        /* Bordes redondeados */
+    padding: 15px;             /* Espaciado interno */
+    margin: 20px auto;         /* Espacio superior e inferior, centrado */
+    width: 80%;                /* Ajusta el ancho según necesites */
+    text-align: center;        /* Centra el texto */
+    font-family: Arial, sans-serif; /* Fuente básica para legibilidad */
+    font-size: 1.2em;          /* Tamaño de fuente ligeramente mayor */
+    color: #333;               /* Color del texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+}
